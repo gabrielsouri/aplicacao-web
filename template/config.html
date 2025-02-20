@@ -1,1 +1,18 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <div>
+        <h1 id="titulo">Configurações</h1>
 
+{% for item in menu %}
+        <li>{{ item }}</li>
+{% endfor %}
+
+        <!-- <ul>
+            <li>Usuários</li>
+            <li>Veículos</li>
+            <li>Documentos</li>
+        </ul> -->
+
+        <button onclick="mostrar()">Mensagem</button>
+    </div>
+{% endblock %}
