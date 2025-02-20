@@ -13,5 +13,5 @@ def config():
     menu_op = ["Usuarios","Veiculos","Patrimonio"]
     return render_template("config.html",menu=menu_op)
 
-
-#app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
