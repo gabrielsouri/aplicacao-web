@@ -13,9 +13,5 @@ def config():
     menu_op = ["Usuarios","Veiculos","Patrimonio"]
     return render_template("config.html",menu=menu_op)
 
-@app.route('/feio')
-def foto():
-    return render_template("foto.html")
-
 
 #app.run(debug=True)
