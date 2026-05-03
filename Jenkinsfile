@@ -6,7 +6,7 @@ pipeline {
         AGENT_CSPM_URL      = 'http://agent-cspm:8003'
         GIT_REPO            = "${env.GIT_URL ?: 'https://github.com/org/repo'}"
         BRANCH              = "${env.BRANCH_NAME ?: 'main'}"
-        SECURITY_POLICY     = 'default'
+        SECURITY_POLICY     = 'pci-dss'
     }
 
     options {
